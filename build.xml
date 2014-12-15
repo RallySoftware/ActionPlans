@@ -1,0 +1,31 @@
+<project name="Sample usage of Salesforce Ant tasks" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <property environment="env"/>
+    <property file="build.properties"/>
+    <!-- <property name="src.dir">../../../apex/src</property>
+    <property name="deploy.dir">deploy</property> -->
+    <property name="sf.pollWaitInMillis" value="10000" />
+    <property name="sf.securityToken" value="" />
+    <property name="sf.maxPoll" value="1000" />
+
+    <!-- Get SF Password from environment variable, if it is set. Why? Ant fucks up when handling dollars! -->
+    <condition property="sf.password" value="${env.SF_PASS}">
+        <isset property="env.SF_PASS" />
+    </condition>
+
+    <!-- Credential Properties -->
+    <input message="Please enter SF url:" addproperty="sf.serverurl" defaultvalue="https://test.salesforce.com"/> 
+    <input message="Please enter username:" addproperty="sf.username" defaultvalue="" /> 
+    <input message="Please enter password:" addproperty="sf.password" >
+        <handler classname="org.apache.tools.ant.input.SecureInputHandler" />
+    </input> 
+    
+    <taskdef classPath="ant-salesforce-30.0-rallydev.jar" uri="antlib:com.salesforce"/>
+
+    <target name="deploy">
+        <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src">
+      </sf:deploy>
+    </target>
+
+</project>
+
