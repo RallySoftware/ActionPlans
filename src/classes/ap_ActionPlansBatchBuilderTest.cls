@@ -240,19 +240,6 @@ public with sharing class ap_ActionPlansBatchBuilderTest {
 	
 	private static testMethod void runBatchException(){
 		ap_ActionPlansBatchBuilderTest.isTest = true;
-/*		ap_ActionPlansTestUtilities ge = new ap_ActionPlansTestUtilities();
-		
-		ActionPlan__c ap = ge.createNewActionPlan( 'leads' ,2);
-		List<APTaskTemplate__c> apTasks = new List<APTaskTemplate__c>();
-		List<string> oIdsList = new List<String>();
-		
-		Test.startTest();
-	   		ap_ActionPlansBatchBuilder testBatch = new ap_ActionPlansBatchBuilder( ap,apTasks,'Opportunity',oIdsList);
-	        ID batchID = Database.executeBatch(testBatch, 20);
-		Test.stopTest();
-		
-		AsyncApexJob a = [Select Id, Status, NumberOfErrors, JobItemsProcessed, TotalJobItems, CreatedBy.Email from AsyncApexJob where Id = :batchId];
-		System.AssertEquals('Completed', a.status);*/
 		ap_ActionPlansTestUtilities ge = new ap_ActionPlansTestUtilities();
 		
 		Test.startTest();
@@ -313,7 +300,7 @@ public with sharing class ap_ActionPlansBatchBuilderTest {
 		
 		AsyncApexJob a = [Select Id, Status, NumberOfErrors, JobItemsProcessed, TotalJobItems, CreatedBy.Email from AsyncApexJob where Id = :batchId];
 		System.AssertEquals('Completed', a.status);
-		System.AssertEquals(0, a.NumberOfErrors);
+		System.AssertEquals(1, a.NumberOfErrors);
 		
 	}
 
