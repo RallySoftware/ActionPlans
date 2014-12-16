@@ -3,5 +3,5 @@
     <label>Action Plans</label>
     <mobileReady>false</mobileReady>
     <motif>Custom11: Star</motif>
-    <page>ap__ActionPlanList</page>
+    <page>ap_ActionPlanList</page>
 </CustomTab>
