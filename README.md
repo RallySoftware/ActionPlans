@@ -1,4 +1,4 @@
-SFDC_ActionPlans
+SFDC ActionPlans
 ================
 
 Action Plans helps your organization encapsulate best practices into easily sharable, reusable task templates.
@@ -27,6 +27,7 @@ Action Plans is Open Source software. We welcome your issue reports, ideas, docu
   * Action Plans Settings controls behavior around Chatter Brag and default task assignment behavior
   * Ability to delete up to 65 Action Plans at a time.
 
+<hr />
 
 Installation
 ------------
