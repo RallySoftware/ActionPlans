@@ -14,7 +14,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>Edit</actionName>
-        <content>ActionPlanCreation</content>
+        <content>ap__ActionPlanCreation</content>
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
@@ -23,7 +23,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>New</actionName>
-        <content>ActionPlanCreation</content>
+        <content>ap__ActionPlanCreation</content>
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
@@ -32,7 +32,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <content>ActionPlanDetail</content>
+        <content>ap__ActionPlanDetail</content>
         <type>Visualforce</type>
     </actionOverrides>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -272,7 +272,7 @@ OR( Campaign__c == null,  Campaign__c == &apos;&apos; )
         <linkType>page</linkType>
         <masterLabel>Action Plans Delete (VF)</masterLabel>
         <openType>replace</openType>
-        <page>ActionPlansDelete</page>
+        <page>ap__ActionPlansDelete</page>
         <protected>false</protected>
     </webLinks>
     <webLinks>

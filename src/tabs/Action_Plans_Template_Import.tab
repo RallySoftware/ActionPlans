@@ -3,5 +3,5 @@
     <label>Import Template</label>
     <mobileReady>false</mobileReady>
     <motif>Custom67: Gears</motif>
-    <page>ActionPlanTemplateImport</page>
+    <page>ap__ActionPlanTemplateImport</page>
 </CustomTab>

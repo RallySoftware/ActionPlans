@@ -14,7 +14,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>Edit</actionName>
-        <content>ActionPlanTemplateCreation</content>
+        <content>ap__ActionPlanTemplateCreation</content>
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
@@ -23,7 +23,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>New</actionName>
-        <content>ActionPlanTemplateCreation</content>
+        <content>ap__ActionPlanTemplateCreation</content>
         <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
@@ -32,7 +32,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <content>ActionPlanTemplateDetail</content>
+        <content>ap__ActionPlanTemplateDetail</content>
         <type>Visualforce</type>
     </actionOverrides>
     <deploymentStatus>Deployed</deploymentStatus>

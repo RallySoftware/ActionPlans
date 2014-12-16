@@ -3,5 +3,5 @@
     <label>About Action Plans</label>
     <mobileReady>false</mobileReady>
     <motif>Custom26: Flag</motif>
-    <page>ActionPlanAbout</page>
+    <page>ap__ActionPlanAbout</page>
 </CustomTab>
